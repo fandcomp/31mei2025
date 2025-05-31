@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Someone Special</title>
+    <meta name="description" content="A special message for someone I love">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        love: "#ff6b81",
+                        heart: "#ff4757",
+                        light: "#fff5f5"
+                    },
+                    fontFamily: {
+                        romantic: ["'Dancing Script', cursive"],
+                        sans: ["'Poppins', sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-light font-sans">
+    <div class="container mx-auto px-4 py-8 max-w-3xl">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-romantic text-heart mb-4">Hi Alma..</h1>
+            <div class="flex justify-center space-x-2">
+                <i class="fas fa-heart text-heart text-xl"></i>
+                <i class="fas fa-heart text-heart text-xl"></i>
+                <i class="fas fa-heart text-heart text-xl"></i>
+            </div>
+        </header>
+
+        <main class="space-y-8">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 transform hover:scale-[1.01] transition duration-300">
+                <div class="flex items-start mb-4">
+                    <i class="fas fa-quote-left text-love text-2xl mr-3 mt-1"></i>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        KAMU PARAH SII, tapi ya mau gimana lagi yakann.. GPP KOK, hehe capslok dikit lah ya, kan kita bukan yg jangka waktu singkat, jadi masih banyak kesempatan untuk meet selanjutnya.
+                        Kok bisa si kamu keren gitu, aku aja IB selain ituuu juga biar kabur dikit dari agenda malas dikampus, masak sore ini disuruh wajib olahraga, kan libur ya, tanggal merah, ANEHH
+                        Jadii, karna gabut kubuatin 2 pantun.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-love mb-3">#1</h3>
+                    <p class="text-gray-600">
+                        Secangkir kopi dingin ditangan udah ada,
+                        Harum semerbak menggoda rasa.
+                        Semangat gladinya ya alma,
+                        Besok aman lancar kok acaranya! ☕
+
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-love mb-3">#2</h3>
+                    <p class="text-gray-600">
+                        Jauh di mata dekat di hati,
+                        Rindu mengalir seperti sungai.
+                        Semoga segera kita bersua lagi,
+                        Menghapus jarak dengan peluk damai. 💕
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-xl h-64">
+                <img 
+                    src="https://picsum.photos/800/400?random=1" 
+                    alt="Romantic sunset" 
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                    <p class="text-white text-xl font-romantic">
+                        "Together is my favorite place to be"
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-love text-white rounded-xl p-6 text-center">
+                <h2 class="text-2xl font-bold mb-4">Gatau diisi apa</h2>
+                <p class="mb-4">
+                    jadi lakuin aja apa yang kamu suka,
+                    karena aku suka kalau kamu suka.
+                    <br> 
+                </p>
+                <button class="bg-white text-love px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition">
+                    <i class="fas fa-heart mr-2"></i> Always Yours
+                </button>
+            </div>
+        </main>
+
+        <footer class="mt-12 text-center text-gray-500">
+            <p>Made with <i class="fas fa-heart text-heart"></i> for someone special</p>
+            <p class="text-sm mt-2">© 2025 - Forever</p>
+        </footer>
+    </div>
+
+    <script>
+        // Animation for hearts
+        document.addEventListener('DOMContentLoaded', function() {
+            const hearts = document.querySelectorAll('.fa-heart');
+            
+            hearts.forEach(heart => {
+                heart.addEventListener('mouseover', () => {
+                    heart.classList.add('animate-pulse');
+                });
+                
+                heart.addEventListener('mouseout', () => {
+                    heart.classList.remove('animate-pulse');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
